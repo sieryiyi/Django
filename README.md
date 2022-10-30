@@ -22,6 +22,14 @@ ps：简单的开发用不到多APP，一般情况，一个项目下创建一个
 ### 简单功能实现
 
 - 创建APP
-- 注册APP
+- 注册APP【setting.py】
     - 在settings配置文件里的INSTALLED_APPS中注册
     - 'app01.apps.App01Config',
+- 编写url和视图函数的对应关系【urls.py】
+- 编写视图函数【view.py】
+- 启动Django：
+  - django-admin.exe startproject djgo1test
+  - "E:\pythonproject\pythonProject
+\venv\Scripts\django-admin.exe" startproject djgo1test
+
+

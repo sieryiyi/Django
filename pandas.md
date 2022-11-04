@@ -30,6 +30,21 @@
   - df.reindex(index=[0, 2, 5], columns=['A', 'C', 'B'])
 - 设置索引：将列表、序列或dataframe设置为dataframe索引的方法
 
+```
+data = pd.read_csv("employees.csv")
+data.set_index("first_name", inplace=True)
+```
+
+- 获取数据：
+  - df['A']
+  - df[0:3]
+  - df.loc['a']
+- 快速访问标量：
+  - df.at['a','A']  # 行标签、列标签
+  - df.iat[1,1]
+
+- 获取行数和列数：df.shape
+- 获取列值总和：DataFrame.sum(axis=None,skipna=None) # skipna：计算结果时排除NAN空值
 
 ### dataframe
 
@@ -68,4 +83,15 @@
 - 5、combine：通过使用函数，把两个DataFrame按列进行组合
   - x.combine(y,lambda a,b:np.where(a>b,a,b))
 
+### 数据透视表
 
+可以对数据动态排布并且分类汇总的表格格式，在pandas中它被称作pivot_table
+
+pd.pivot_table(df, values='D', index=['A', 'B'], columns=['C'])
+
+### 缺失数据处理
+
+- dropna()	过滤掉值为NaN的行
+- fillna()	填充缺失数据
+- isnull()	返回布尔数组，缺失值对应为True
+- Truenotnull()	返回布尔数组，缺失值对应为False

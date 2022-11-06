@@ -39,3 +39,49 @@ ssh 最常用的功能是登录远程主机，选择以什么用户连接哪台�
 
 - 创建普通文件：touch mjj.txt
 - 修改文件时间
+
+### copy命令
+
+- 复制普通命令：cp mjj.txt new_mjj.tex
+- 复制普通文件，且改名放到其他文件夹：cp mjj.tt ./mysite/mjj2.txt 
+- 复制文件夹：cp -r  文件夹名字1 新的名字2（递归方式）
+- 不改变文件属性：cp -p
+- 复制且保持软连接（快捷方式）：cp -d 
+- 如果文件2已经存在，询问是否覆盖：cp -i
+
+
+### mv命令
+
+- 移动：mv ./mjj.txt（原路径）    新路径
+- 重命名：mv mjj.tex new_mjj.txt
+
+### rm命令
+
+- 删除文件夹：rm -r
+- rm -d：删除空目录
+
+### Linux帮助命令
+
+- man 命令
+- 命令 --help
+
+### Linux开关机
+
+- shutdown -r ：重启
+- shutdown -h ：关机
+
+### 常用快捷键
+
+- ctrl+c：取消当前操作
+- ctrl+l：清屏
+- ctrl+d：退出当前用户
+- ctrl+a：光标移到行首
+- ctrl+e：光标移到行位
+- ctrl+u：删除光标到行首的内容
+
+### echo命令
+
+- 打印这个字符串：echo 字符串
+- 查看Linux环境变量：echo $PATH
+
+### vim 命令
